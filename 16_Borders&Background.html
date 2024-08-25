@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and backgrounds</title>
+
+    <style>
+        #firstPara{
+            background-color: red;
+
+            height: 100px;
+            width: 455px;
+
+            /* defining border */
+            border-width: 5px ; /*method 1*/
+            border-style: groove;/*method 1*/
+            border-color: aqua; /*method 1*/
+
+            border: 5px solid aqua; /*method 2*/
+
+
+            border-radius: 10px; /*makes the vertices curved*/
+
+        }
+
+        #secondPara{
+            height: 500px;
+            width: 500px;
+            background-color: blue;
+            border: 5px solid red;
+            background-image: url(https://media.istockphoto.com/id/173600743/photo/sitting-cat.jpg?s=612x612&w=is&k=20&c=nVbmfL1lv78VghWJaW-5iUwfSFvS9XyP5gVHXBw7Rso=);
+            background-repeat: no-repeat; /*repeat x, repeat y*/ 
+            background-position: center ; /*centre top, centre bottom, centre left, etc*/
+        }
+    </style>
+</head>
+<body>
+    <h3>this is heading</h3>
+    <p id="firstPara">this is a paragraph</p>
+
+    <p id="secondPara">this is another paragraph</p>
+
+
+
+</body>
+</html>

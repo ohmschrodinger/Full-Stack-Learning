@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+
+        }
+
+
+        .navbar li {
+            float: left;
+            /*when you write float the item is overflowed and now there wont be any background color*/
+            list-style: none;
+            /*so that bullet points are removed*/
+            margin: 8px 5px;
+            font-size: 17px;
+        }
+
+
+        .navbar ul {
+            overflow: auto;
+            /*to regain background color*/
+
+        }
+
+        .navbar li a {
+            padding: 7px 15px;
+            text-decoration: none;
+            /*to remove underlined line*/
+            color: aqua;
+
+        }
+
+        .navbar input {
+            float: right;
+            margin: 2px 5px;
+            padding: 7px 15px;
+            border: 2px solid black;
+            border-radius: 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="" placeholder="type to search"> <!--this is search box-->
+                </div>
+            </ul>
+
+
+        </nav>
+    </header>
+</body>
+
+</html>

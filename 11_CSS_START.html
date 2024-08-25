@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tutorial</title>
+    <!-- Method 2 (Internal CSS) to add color to text -->
+    <style>
+        p {
+            color: magenta;
+            background-color: maroon;
+        }
+    </style>
+
+    <!-- Method 3 (external CSS to add color to text) -->
+    <link rel="stylesheet" href="trial.css">
+
+    <!-- if you want to override the domiance then type !important -->
+    <style>
+        p {
+            color: red !important;
+
+        }
+    </style>
+
+    <!-- (The line which is written later in the code will take dominance...(talking about method 2 and 3)) -->
+
+</head>
+
+<body>
+    <h1>This is css tutoria</h1>
+    <p>This tutorial will teach you about Css</p>
+
+    <!-- Method 1 (inline css) to change colour of text -->
+    <p style="color: red; background-color: aqua;">changing colour of text to red</p>
+
+    <p>Hi (refer to line 9 )</p>
+
+
+</body>
+
+</html>

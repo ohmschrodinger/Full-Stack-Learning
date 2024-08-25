@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <!-- red heading wala font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&display=swap" rel="stylesheet">
+
+    <!-- dusra wala font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .bungee-tint-regular {
+            font-family: "Bungee Tint", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        * {}
+
+        .heading {
+            font-family: "Bungee Tint", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .container {
+            border: 5px solid black;
+            padding: 5px;
+            margin: 33px auto;
+            background-color: rgb(214, 254, 242);
+
+            width: 700px; 
+        }
+
+        .item {
+            background-color: rgb(224, 223, 189);
+            border: 3px solid rgb(203, 103, 170);
+            /* margin: 12px 3px; */
+            margin: 6px auto;
+
+            padding: 12px 3px;
+
+            border-radius: 20px;
+            width: 500px;
+
+            font-family: "Edu VIC WA NT Beginner", cursive;
+            font-optical-sizing: auto;
+        }
+
+        #fruit{
+            float: left;
+            /* width: 30%; */
+        }
+
+        #computer{
+            float: left;
+            /* width: 50%; */
+        }
+
+        #stationary{
+            
+            clear: left; /*no float left element will be overlapped*/
+            /* clear: both;  ->this is for both left and right */
+        }
+
+
+        p,h3{
+            /* text-align: right; */
+            /* text-align: left; */
+            text-align: center;
+            /* text-align: justify; */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Welcome to my store <br>my name is om and im a good boy
+    </h3>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3 class="heading">Fruits</h3>
+            <p id="fruitpara" class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quisquam
+                quaerat suscipit magni mollitia libero maxime nulla est? Corrupti sint non et amet in, debitis aperiam
+                tempora ad possimus at. Aperiam odio corrupti pariatur exercitationem provident explicabo consequuntur,
+                possimus iste a, debitis accusamus voluptatibus tempore similique ipsa animi in qui.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3 class="heading">Computer</h3>
+            <p id="fruitspara" class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quisquam
+                quaerat suscipit magni mollitia libero maxime nulla est? Corrupti sint non et amet in, debitis aperiam
+                tempora ad possimus at. Aperiam odio corrupti pariatur exercitationem provident explicabo consequuntur,
+                possimus iste a, debitis accusamus voluptatibus tempore similique ipsa animi in qui.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3 class="heading">Stationary</h3>
+            <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quisquam
+                quaerat suscipit magni mollitia libero maxime nulla est? Corrupti sint non et amet in, debitis aperiam
+                tempora ad possimus at. Aperiam odio corrupti pariatur exercitationem provident explicabo consequuntur,
+                possimus iste a, debitis accusamus voluptatibus tempore similique ipsa animi in qui. </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
