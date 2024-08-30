@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        /* NOTE Z index dosent work for static position (static position is default) */
+        /* to use z index set the position as relative/absolute..etc */
+        #box-1 {
+            background-color: red;
+            position: relative;
+            top: 50px;
+
+            z-index: 2; /*greater so will appear on top*/
+
+        }
+
+        #box-2 {
+            background-color: yellow;
+            position: relative;
+            top: 12px;
+
+            z-index: 1; /*lower so will go on bottom*/
+        }
+
+        #box-3 {
+
+            background-color: green;
+            /* display: none;  */
+            /* will hide the element and space */
+
+            /* visibility: hidden; */
+            /* will hide the element but show the empty space */
+        }
+
+        #box-4 {
+            background-color: cyan;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+
+</html>
