@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container {
+            height: 500px;
+            width: 100%; /*NOTE: SET THIS IN % AND NOT IN PX OTHERWISE THERES GONNA BE PROBLEM WHILE WRAPPING*/
+            border: 2px solid red;
+
+            /* NOTE- USE RESPONSIVENESS TO CHECKOUT THE FOLLOWING PROPERTIES  */
+
+            /* initialise the container as a flex box */
+            display: flex;
+            /*flex is defined in container*/
+
+            /* flex properties for flex container */
+
+            flex-direction: row;
+            /*this is by default*/
+
+            flex-direction: column;
+
+            flex-direction: row-reverse;
+            /*will start from right side*/
+
+            flex-direction: column-reverse;
+            /*will start from bottom*/
+
+            flex-direction: row;
+
+            /* default is no wrap */
+            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* shortcut for direction and wrap is */
+            /* flex-flow: row wrap; */
+
+
+            justify-content: center;
+            /* the items will get in centre */
+
+            justify-content: space-between;
+            /* equal space(excluding the left most and rightmost) BETWEEN the boxes */
+
+            justify-content: space-evenly;
+            /* equal space including leftmost and rightmost */
+
+            justify-content: space-around;
+            /* equal space around each box...kinda like having a margin */
+
+
+
+            /* to vertically align  use align items*/
+
+            align-items: flex-start;
+            /* this is by default */
+
+            align-items: center;
+            /* the items will get in centre */
+
+            align-items: flex-end;
+            /* the items will shift down towards the bottom of the container */
+
+
+            flex-wrap: wrap;
+            /* align-items: stretch; */
+
+
+            /* setting everything to default now */
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+
+
+
+
+        }
+
+        .item {
+            background-color: tomato;
+            border: 3px solid green;
+            margin: 10px;
+            padding: 10px;
+
+            width: 100px;
+            height: 100px;
+
+
+
+        }
+
+
+        /* FLEX PROPERTIES FOR FLEX ITEMS */
+        /* for order-> the item which has a higher order will go to end */
+        /* for flex grow-> whenever you increase the dimension (in responsiveness) the boxes will increase their width with the order mentioned in flex grow  */
+        /* for flex shrink-> same as flex grow but used when dimension is getting smaller */
+        #item-1 {
+            /* order: 2; */
+
+            /* flex-grow: 2; */
+
+            flex-shrink: 2;
+        }
+
+        #item-2 {
+            /* order:4 ; */
+
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+
+            flex-basis: 320px;
+            /* when flex-direction is set to row flex-basis will act as width */
+            /* when flex-direction is set to  column flex basis will act as height*/
+        }
+
+        #item-3 {
+            /* shortcut */
+            /* flex: grow shrink basis */
+            flex: 2 2 400px;
+
+
+            /* for vertically aligning a specific item (item 3 in this case) */
+            align-self: flex-start;
+            /* the box will stay up */
+
+            align-self: center;
+            /* the box will come in centre vertically*/
+
+            align-self: flex-end;
+            /* the box will come down vertically */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+
+</html>

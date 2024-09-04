@@ -3,25 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice </title>
-    <!-- to include a css file  -->
-     <link rel="stylesheet" href="name_of_file.css">
-    <!-- to include js file -->
-     <script src = "name.js"> </script>
+    <title>Document</title>
     <style>
-        p{color: red;}
+        .container{
+            border: 2px solid black;
+            height: 600px;
+            width: 100%;
+
+            display: flex;
+
+            flex-flow: row wrap;
+
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .item{
+            background-color: rgba(131, 188, 190, 0.76);
+            margin: 30px;
+            padding: 90px 70px;
+        
+            align-items: center;
+            border: 2px solid red;
+
+        }
+
+        #item-1{
+            align-self: center;
+        }
+        #item-2{
+order: 2;
+        }
+        #item-3{
+            order: 5;
+        }
+        #item-4{
+            align-self: center;
+        }
+        #item-5{
+            flex-basis: 30px;
+        }
+        #item-6{
+
+        }
     </style>
 </head>
 <body>
-    <h1>This is a html file</h1>
-    <h2>smaller</h2>
-    <h3>more smaller</h3>
-    <h4>more smaller</h4>
-    <p>hello there my name is om </p>
-    <p>hello there my name is om </p>
-    <p>hello there my name is om </p>
-    <p>hello there my name is om </p>
-    <p>hello there my name is om </p>
-
+    <h1>this is flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">this is box one</div>
+        <div class="item" id="item-2">this is box towa</div>
+        <div class="item" id="item-3">this is box three</div>
+        <div class="item" id="item-4">this sis box four </div>
+        <div class="item" id="item-5">this is box five</div>
+        <div class="item" id="item-6">this is box Sixth</div>
+    </div>
 </body>
 </html>
