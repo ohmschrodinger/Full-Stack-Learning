@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        html{
+            background-color: black;
+            color: white;
+            font-size: 200%;
+        }
+
+        div p{
+            color: cyan;
+        }
+        /* this includes all the p tags which come under div*/
+
+
+        div > p{
+            color: red;
+        }
+        /* this includes p which is just under div...or p is a direct child of div */
+
+
+        div+p{
+            color: yellow;
+        }
+        /* this includes the p whos previous sibling is div  */
+        /* eg 
+        <div> hey </div>
+        <p> yo </p>
+
+        in this case div ia a sibling of p
+         */
+    </style>
 </head>
 <body>
-    
+    <h1>im a heading</h1>
+    <div class="container">
+
+        <div class="row">
+
+            <ul>
+                <li>
+                    <p>Hey there im inside a li</p>
+                </li>
+            </ul>
+
+            <p>Hey there i am inside div.row</p>
+        </div>
+
+        <p>Hey there i am inside div.container</p>
+    </div>
+
+    <p>i am outside div</p>
 </body>
 </html>
