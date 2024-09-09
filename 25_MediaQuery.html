@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box{
+            font-size: 22px;
+            background-color: rgba(255, 0, 0, 0.373);
+            color: black;
+            text-align: center;
+
+
+            display: none; 
+            /* everything */
+        }
+
+
+
+        /*media query is basically like if statement*/
+        /* checkout types of media query in html (check it out on google) */
+
+        @media only screen and (max-width: 300px) {
+            /* only screen is media type */
+            #box-1{
+                display: block;
+            }
+        }
+        @media (max-width: 400px) and (min-width: 300px) {
+            #box-2{
+                display: block;
+            }
+        }
+        @media (min-width: 400px) {
+            #box-3{
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <div class="box" id="box-1">Im a phone</div>
+    <div class="box" id="box-2">Im a tablet</div>
+    <div class="box" id="box-3">Im a computer</div>
+    <div class="box" id="box-4">Im a wide screen computer</div>
     
 </body>
 </html>
+
