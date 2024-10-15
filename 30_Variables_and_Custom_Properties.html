@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            /* declaring global variables */
+            --red_color: red;
+        }
+        
+
+        .box {
+
+            /* creating a variable */
+            --box-color: blue;
+            /* this is a local variable */
+
+            width: 200px;
+            height: 200px;
+            /* background-color: rgba(127, 255, 212, 0.479); */
+
+            /* syntax is var(variable name) */
+            background-color: var(--box-color);
+            border: 2px solid rebeccapurple;
+        }
+
+        .container {
+            display: flex;
+            border: 3px solid green;
+            height: 500px;
+            width: 500px;
+            align-items: center;
+            justify-content: center;
+            margin: 3px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 20px 20px;
+            margin: 20px  20px;
+            /* border: 2px solid rebeccapurple; */
+            background-color: rgba(238, 130, 238, 0.367);
+            /* box-shadow: 10px 20px rgba(0, 0, 0, 0.4); */
+            /* box-shadow: -10px -20px rgba(0, 0, 0, 0.4); */
+
+            /* here the 3rd one is blurr radius */
+            /* box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.4); */
+
+            /* here the fourth one is spread radius */
+            /* box-shadow: 10px 20px 10px 1px rgba(0, 0, 0, 0.4); */
+
+
+            /* BOX SHADOW INSET means shadow is on the card */
+            box-shadow: inset 10px 10px rgba(128, 128, 128, 0.46);
+        }
+
+        div h1{
+            text-shadow: 1px 1px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1"><h1>Card 1 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus accusamus corporis, molestiae enim, dignissimos sit est aspernatur beatae dolor tenetur maiores unde ea sint ex nostrum adipisci quibusdam, provident mollitia. At, molestias deserunt?</p></h1></div>
+        <div class="card" id="card-2"><h1>Card 2 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus accusamus corporis, molestiae enim, dignissimos sit est aspernatur beatae dolor tenetur maiores unde ea sint ex nostrum adipisci quibusdam, provident mollitia. At, molestias deserunt?</p></h1></div>
+        <div class="card" id="card-3"><h1>Card 3 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus accusamus corporis, molestiae enim, dignissimos sit est aspernatur beatae dolor tenetur maiores unde ea sint ex nostrum adipisci quibusdam, provident mollitia. At, molestias deserunt?</p></h1></div>
+    </div>
+</body>
+</html>
