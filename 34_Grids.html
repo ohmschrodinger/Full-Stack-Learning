@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tutorial</title>
+    <style>
+        .container{
+            display: grid;
+            /* now container is a grid */
+            /* all the children in grid is called grid items */
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 150px auto 150px; */
+            /* grid-template-columns: 300px 800px 80px; */
+
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /* divides the frame into 10 equal parts */
+            grid-template-columns: repeat(10, auto);
+            grid-gap: 10px;
+            
+        }
+
+        .item{
+            background-color: rgba(0, 255, 255, 0.373);
+            /* height: 100px;
+            width: 100px; */
+            /* margin: 30px; */
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- shortcut div.class{This is item-$}*10 -->
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-10</div>
+    </div>
+</body>
+</html>
