@@ -24,3 +24,7 @@
 // console.log(new_marks[i]);
 // }+
 
+let n = prompt("Enter a number: ");
+let sum = parseInt(n)+1; //prompt takes input as a string  so we need to convert it to integer using parseInt() function
+
+console.log(sum);
