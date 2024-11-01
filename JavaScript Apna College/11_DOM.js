@@ -39,4 +39,20 @@ let all = document.querySelectorAll("#heading");
 console.log(all);
 
 
+// PROPERTIES
+// tagName - returns  the name of the tag
+// inner text-  text inside the tag
+// inner html-  returns the html content of the element
+// text content-   returns the textual content even for hidden elements
+
+let temp = first.tagName;
+console.dir(temp);
+
+
+// <div class ="container"> hello </div>
+let lol = document.getElementsByClassName("container");
+let lol_tagname = lol.tagName;
+console.dir(lol_tagname);
+
+
 
